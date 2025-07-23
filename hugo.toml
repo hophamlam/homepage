@@ -14,7 +14,6 @@ title = "hophamlam"
 description = "Personal Blog"
 keywords = ["Blog", "Portfolio", "PaperMod"]
 author = "hophamlam"
-images = ["<profile-image-link>"]
 DateFormat = "January 2, 2006"
 defaultTheme = "auto"
 disableThemeToggle = false
@@ -33,37 +32,36 @@ hidemeta = false
 hideSummary = false
 showtoc = false
 tocopen = false
-googleAnalytics = "" # Disable Google Analytics
+googleAnalytics = ""
 
 [params.profileMode]
 enabled = true
 title = "hophamlam"
-subtitle = "👪🍚🐒🎵💻⚽"
+subtitle = "Welcome to my blog"
 imageUrl = "https://gravatar.com/avatar/8bcd691b08c9cd64eb566272afee38c4?size=512"
-imageWidth = 300
-imageHeight = 300
+imageWidth = 120
+imageHeight = 120
 imageTitle = "hophamlam"
-
-[[params.socialIcons]]
-name = "zalo"
-url = "https://zalo.me/0938568040"
 
 [[params.socialIcons]]
 name = "telegram"
 url = "https://t.me/hophamlam"
 
 [[params.socialIcons]]
+name = "facebook"
+url = "https://facebook.com/hophamlam"
+
+[[params.socialIcons]]
+name = "zalo"
+url = "https://zalo.me/hophamlam"
+
+[[params.socialIcons]]
 name = "messenger"
-url = "https://m.me/hophamlam0627"
+url = "https://m.me/hophamlam"
 
 [[params.socialIcons]]
 name = "hashnode"
-url = "https://hashnode.hophamlam.com"
-
-[[params.socialIcons]]
-name = "discord"
-url = "https://discord.gg/zUfmfmpz"
-
+url = "https://hashnode.com/@hophamlam"
 
 [params.assets]
 favicon = "/favicon.ico"
@@ -71,5 +69,23 @@ favicon16x16 = "/favicon-16x16.png"
 favicon32x32 = "/favicon-32x32.png"
 apple_touch_icon = "/apple-touch-icon.png"
 safari_pinned_tab = "/safari-pinned-tab.svg"
+
+[[menu.main]]
+identifier = "categories"
+name = "Categories"
+url = "/categories/"
+weight = 10
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 20
+
+[[menu.main]]
+identifier = "archives"
+name = "Archives"
+url = "/archives/"
+weight = 30
 
 
