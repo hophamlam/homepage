@@ -7,9 +7,7 @@ showToc: false
 ---
 
 {{< contact >}}
-💬 [Messenger](https://m.me/hophamlam0627)
+[Hashnode](https://hashnode.hophamlam.com)
 
-📝 [Hashnode](https://hashnode.hophamlam.com)
-
-🎮 [Discord](https://discord.gg/zUfmfmpz)
+[Discord](https://discord.gg/zUfmfmpz)
 {{< /contact >}}
