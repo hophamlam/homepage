@@ -1,0 +1,36 @@
+<div class="contact-links">{{ .Inner | markdownify }}</div>
+
+<style>
+  .contact-links {
+    background: var(--entry);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+  }
+
+  .contact-links p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+    background: var(--code-bg);
+    transition: all 0.3s ease;
+  }
+
+  .contact-links p:hover {
+    transform: translateX(10px);
+  }
+
+  .contact-links a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .contact-links a:hover {
+    color: var(--secondary);
+  }
+</style>

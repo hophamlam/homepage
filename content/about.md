@@ -1,21 +1,17 @@
 ---
 title: "About Me"
-date: 2024-03-19
-draft: false
+url: "/about/"
+summary: "about"
+disableShare: true
 showToc: false
 ---
 
-## Hi there! 👋
+## Connect with Me
 
-I'm Ho Pham Lam, a passionate developer and tech enthusiast. When I'm not coding, you can find me enjoying time with family 👪, having a good meal 🍚, or playing sports ⚽.
+{{< contact >}}
+💬 [Messenger](https://m.me/hophamlam0627)
 
-## Connect with me
+📝 [Hashnode](https://hashnode.hophamlam.com)
 
-You can find me on various platforms:
-
-{{< social-icons >}}
-
-- 💬 [Messenger](https://m.me/hophamlam0627)
-- 📝 [Hashnode](https://hashnode.hophamlam.com)
-- 🎮 [Discord](https://discord.gg/zUfmfmpz)
-  {{< /social-icons >}}
+🎮 [Discord](https://discord.gg/zUfmfmpz)
+{{< /contact >}}

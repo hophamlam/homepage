@@ -16,12 +16,14 @@ keywords = ["Blog", "Portfolio", "PaperMod"]
 author = "hophamlam"
 DateFormat = "January 2, 2006"
 defaultTheme = "auto"
-ShowReadingTime = true
-ShowShareButtons = true
+ShowReadingTime = false
+ShowShareButtons = false
 ShowPostNavLinks = true
 ShowBreadCrumbs = true
 ShowCodeCopyButtons = true
 UseHugoToc = true
+disableSpecial1stPost = true
+hideMeta = true
 
 [params.profileMode]
 enabled = true
@@ -41,9 +43,13 @@ name = "telegram"
 url = "https://t.me/hophamlam"
 
 [[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 10
+
+[[menu.main]]
 identifier = "about"
 name = "About"
 url = "/about/"
-weight = 10
-
-
+weight = 20
