@@ -6,8 +6,6 @@ disableShare: true
 showToc: false
 ---
 
-## Connect with Me
-
 {{< contact >}}
 💬 [Messenger](https://m.me/hophamlam0627)
 
