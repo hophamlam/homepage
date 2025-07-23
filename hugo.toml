@@ -28,7 +28,7 @@ hideMeta = true
 [params.profileMode]
 enabled = true
 title = "hophamlam"
-subtitle = "🍚🎵⚙️⚽|👪🔇👶🧼|🐒🦀🥇🇻🇳"
+subtitle = "🍚🎵⚙️⚽|👪🔇👶🧼|🐒🦀🇻🇳"
 imageUrl = "https://gravatar.com/avatar/8bcd691b08c9cd64eb566272afee38c4?size=512"
 imageWidth = 300
 imageHeight = 300
