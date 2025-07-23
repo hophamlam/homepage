@@ -12,7 +12,7 @@ buildExpired = false
 env = "production"
 title = "hophamlam"
 description = "hophamlam's profile"
-keywords = ["hophamlam", "ho pham lam", "lam ho", "Hồ Phạm Lâm", "Profile", "Blog", "Portfolio"]
+keywords = ["hophamlam", "ho pham lam", "Hồ Phạm Lâm", "lamho", "lam ho", "Profile", "Blog", "Portfolio"]
 author = "hophamlam"
 DateFormat = "January 2, 2006"
 defaultTheme = "auto"
@@ -28,7 +28,7 @@ hideMeta = true
 [params.profileMode]
 enabled = true
 title = "hophamlam"
-subtitle = "👪🍚🐒🎵💻⚽🇻🇳"
+subtitle = "🍚🎵⚙️⚽|👪🔇👶🧼|🐒🦀🥇🇻🇳"
 imageUrl = "https://gravatar.com/avatar/8bcd691b08c9cd64eb566272afee38c4?size=512"
 imageWidth = 300
 imageHeight = 300
@@ -63,3 +63,15 @@ favicon = "/favicon.ico"
 favicon16x16 = "/favicon-16x16.png"
 favicon32x32 = "/favicon-32x32.png"
 apple_touch_icon = "/apple-touch-icon.png"
+
+[params.webmanifest]
+name = "Ho Pham Lam"
+short_name = "hophamlam"
+description = "Personal Blog of Ho Pham Lam"
+icons = [
+    { src = "/android-chrome-192x192.png", sizes = "192x192", type = "image/png" },
+    { src = "/android-chrome-512x512.png", sizes = "512x512", type = "image/png" }
+]
+theme_color = "#ffffff"
+background_color = "#ffffff"
+display = "standalone"
