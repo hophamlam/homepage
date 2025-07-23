@@ -39,12 +39,14 @@ name = "zalo"
 url = "https://zalo.me/0938568040"
 
 [[params.socialIcons]]
+name = "messenger"
+url = "https://www.messenger.com/t/@hophamlam0627"
+
+[[params.socialIcons]]
 name = "telegram"
 url = "https://t.me/hophamlam"
 
-[[params.socialIcons]]
-name = "messenger"
-url = "https://t.me/hophamlam"
+
 
 [[menu.main]]
 identifier = "home"
