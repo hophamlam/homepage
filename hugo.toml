@@ -40,16 +40,10 @@ url = "https://zalo.me/0938568040"
 name = "telegram"
 url = "https://t.me/hophamlam"
 
-[[params.socialIcons]]
-name = "messenger"
-url = "https://m.me/hophamlam0627"
-
-[[params.socialIcons]]
-name = "hashnode"
-url = "https://hashnode.hophamlam.com"
-
-[[params.socialIcons]]
-name = "discord"
-url = "https://discord.gg/zUfmfmpz"
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 10
 
 
