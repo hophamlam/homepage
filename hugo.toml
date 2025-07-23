@@ -1,0 +1,74 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "hophamlam"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[params]
+env = "production"
+title = "hophamlam"
+description = "Personal Blog"
+keywords = ["Blog", "Portfolio", "PaperMod"]
+author = "hophamlam"
+images = ["<profile-image-link>"]
+DateFormat = "January 2, 2006"
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
+
+[params.profileMode]
+enabled = true
+title = "hophamlam"
+subtitle = "👪🍚🐒🎵💻⚽"
+imageUrl = "https://gravatar.com/avatar/8bcd691b08c9cd64eb566272afee38c4?size=512"
+imageWidth = 300
+imageHeight = 300
+imageTitle = "hophamlam"
+
+[[params.socialIcons]]
+name = "zalo"
+url = "https://zalo.me/0938568040"
+
+[[params.socialIcons]]
+name = "telegram"
+url = "https://t.me/hophamlam"
+
+[[params.socialIcons]]
+name = "messenger"
+url = "https://m.me/hophamlam0627"
+
+[[params.socialIcons]]
+name = "hashnode"
+url = "https://hashnode.hophamlam.com"
+
+[[params.socialIcons]]
+name = "discord"
+url = "https://discord.gg/zUfmfmpz"
+
+
+[params.assets]
+favicon = "/favicon.ico"
+favicon16x16 = "/favicon-16x16.png"
+favicon32x32 = "/favicon-32x32.png"
+apple_touch_icon = "/apple-touch-icon.png"
+safari_pinned_tab = "/safari-pinned-tab.svg"
+
+
