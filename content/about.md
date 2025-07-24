@@ -10,4 +10,6 @@ showToc: false
 [Hashnode](https://hashnode.hophamlam.com)
 
 [Discord](https://discord.gg/zUfmfmpz)
+
+[Github](https://github.com/hophamlam)
 {{< /contact >}}
