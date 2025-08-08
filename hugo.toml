@@ -29,10 +29,10 @@ hideMeta = true
 enabled = true
 title = "hophamlam"
 subtitle = "🍚🎵⚙️⚽|👪🔕👶🧽|🐒🦀🇻🇳"
-imageUrl = "https://gravatar.com/avatar/8bcd691b08c9cd64eb566272afee38c4?size=512"
+imageUrl = "/logo/hophamlam-logo.png"
 imageWidth = 300
 imageHeight = 300
-imageTitle = "Ho Pham Lam"
+imageTitle = "hophamlam"
 
 [[params.socialIcons]]
 name = "zalo"
