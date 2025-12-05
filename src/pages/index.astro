@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Profile } from '../components/Profile';
+import { Contact } from '../components/Contact';
+import { SideProject } from '../components/SideProject';
+import { Footer } from '../components/Footer';
+
+// Profile data
+const profileData = {
+  name: '',
+  description: '🍚🎵⚙️⚽|🧑‍🧑‍🧒‍🧒🐒🦀🇻🇳',
+  avatar: '/logo/hophamlam-logo.png',
+};
+
+// Contact data
+const contactData = {
+  socialLinks: [
+    {
+      name: 'Zalo',
+      url: 'https://zalo.me/0938568040',
+      icon: 'zalo' as const,
+    },
+    {
+      name: 'Messenger',
+      url: 'https://www.messenger.com/t/@hophamlam0627',
+      icon: 'messenger' as const,
+    },
+    {
+      name: 'Telegram',
+      url: 'https://t.me/hophamlam',
+      icon: 'telegram' as const,
+    },
+    {
+      name: 'GitHub',
+      url: 'https://github.com/hophamlam',
+      icon: 'github' as const,
+    },
+  ],
+};
+
+// Side projects - Array để hỗ trợ nhiều projects
+const sideProjects = [
+  {
+    title: 'tocdovps.dev',
+    url: 'https://tocdovps.dev',
+    description: {
+      en: 'benchmark VPS side project',
+      vi: 'dự án cá nhân đo hiệu năng VPS',
+    },
+  },
+];
+---
+
+<Layout 
+  title="Ho Pham Lam @hophamlam" 
+  description="Personal homepage of Ho Pham Lam, Full Stack Developer. Connect via GitHub, Telegram, Zalo, and Messenger. Check out my side project tocdovps.dev"
+>
+  <div class="flex-1 flex flex-col">
+    <main class="flex-1 flex items-center justify-center px-4 py-8 md:py-6">
+      <div class="w-full max-w-2xl flex flex-col gap-1">
+        <!-- Profile Section -->
+        <Profile
+          client:load
+          name={profileData.name}
+          description={profileData.description}
+          avatar={profileData.avatar}
+        />
+
+        <!-- Contact Section -->
+        <Contact
+          client:load
+          socialLinks={contactData.socialLinks}
+        />
+
+        <!-- Side Projects Section -->
+        <div class={`flex ${sideProjects.length === 1 ? 'justify-center' : 'flex-wrap gap-3'} w-full`}>
+          {sideProjects.map((project) => {
+            return (
+              <SideProject
+                client:load
+                title={project.title}
+                url={project.url}
+                description={project.description}
+                className={sideProjects.length === 1 ? 'flex-1 min-w-none max-w-[280px]' : 'flex-1 min-w-[200px] max-w-none'}
+              />
+            );
+          })}
+        </div>
+      </div>
+    </main>
+    
+    <Footer client:load />
+
+  </div>
+</Layout>
