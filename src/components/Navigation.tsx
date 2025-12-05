@@ -11,7 +11,10 @@ export interface NavigationProps {
  * Navigation component - Header với site title, language toggle và theme toggle
  * @param siteTitle - Tên site hiển thị bên trái
  */
-export function Navigation({ className, siteTitle = "hophamlam" }: NavigationProps) {
+export function Navigation({
+  className,
+  siteTitle = "hophamlam",
+}: NavigationProps) {
   return (
     <nav
       className={cn(

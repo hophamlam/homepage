@@ -28,14 +28,6 @@
     --chart-3: 0.8816 0.0276 93.1280;
     --chart-4: 0.8822 0.0403 298.1792;
     --chart-5: 0.5608 0.1348 42.0584;
-    --sidebar: 0.9663 0.0080 98.8792;
-    --sidebar-foreground: 0.3590 0.0051 106.6524;
-    --sidebar-primary: 0.6171 0.1375 39.0427;
-    --sidebar-primary-foreground: 0.9881 0 0;
-    --sidebar-accent: 0.9245 0.0138 92.9892;
-    --sidebar-accent-foreground: 0.3250 0 0;
-    --sidebar-border: 0.9401 0 0;
-    --sidebar-ring: 0.7731 0 0;
     --radius: 0.5rem;
   }
 
@@ -64,14 +56,6 @@
     --chart-3: 0.2130 0.0078 95.4245;
     --chart-4: 0.3074 0.0516 289.3230;
     --chart-5: 0.5608 0.1348 42.0584;
-    --sidebar: 0.2357 0.0024 67.7077;
-    --sidebar-foreground: 0.8074 0.0142 93.0137;
-    --sidebar-primary: 0.3250 0 0;
-    --sidebar-primary-foreground: 0.9881 0 0;
-    --sidebar-accent: 0.1680 0.0020 106.6177;
-    --sidebar-accent-foreground: 0.8074 0.0142 93.0137;
-    --sidebar-border: 0.9401 0 0;
-    --sidebar-ring: 0.7731 0 0;
   }
 }
 
@@ -98,40 +82,5 @@
   /* Dark mode: icons sẽ tự động sáng lên */
   .dark img[src*="/icons/"] {
     filter: brightness(0) invert(1);
-  }
-
-  /* Floating button animations */
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes pulse {
-    0%,
-    100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.8;
-    }
-  }
-
-  .floating-button {
-    animation: fadeInUp 0.5s ease-out;
-  }
-
-  .floating-button:hover {
-    transform: scale(1.05);
-    transition: transform 0.2s ease-in-out;
-  }
-
-  .floating-button:active {
-    transform: scale(0.95);
   }
 }
