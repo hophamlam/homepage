@@ -33,18 +33,18 @@ export function Profile({
   return (
     <div
       className={cn(
-        "flex flex-col items-center text-center space-y-3",
+        "flex flex-col items-center text-center space-y-4 animate-in fade-in slide-in-from-bottom-4 duration-700",
         className
       )}
     >
-      <Avatar className="h-32 w-32 md:h-48 md:w-48">
+      <Avatar className="h-32 w-32 md:h-48 md:w-48 ring-2 ring-border/50 hover:ring-primary/50 transition-all duration-300">
         {avatar && <AvatarImage src={avatar} alt={name} />}
         <AvatarFallback className="text-3xl md:text-4xl">
           {initials}
         </AvatarFallback>
       </Avatar>
       <div className="space-y-2 leading-relaxed">
-        <h1 className="text-base md:text-lg font-bold leading-relaxed">
+        <h1 className="text-xl md:text-2xl font-bold leading-relaxed">
           {name}
         </h1>
         {title && (

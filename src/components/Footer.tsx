@@ -21,7 +21,7 @@ export function Footer() {
 
   if (!mounted) {
     return (
-      <footer className="py-3 md:py-4 mt-auto border-t border-border/40">
+      <footer className="py-3 md:py-4 mt-auto">
         <div className="w-full flex items-center justify-center">
           <div className="flex items-center gap-2 text-xs text-muted-foreground">
             <span>Astro</span>
@@ -36,7 +36,7 @@ export function Footer() {
   }
 
   return (
-    <footer className="py-3 md:py-4 mt-auto border-t border-border/40">
+    <footer className="py-3 md:py-4 mt-auto">
       <div className="w-full flex items-center justify-center">
         <div className="flex items-center gap-2 text-xs text-muted-foreground">
           {techStack.map((tech, index) => (

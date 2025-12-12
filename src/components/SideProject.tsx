@@ -64,7 +64,7 @@ export function SideProject({
   return (
     <Card
       className={cn(
-        "border-muted/70 hover:shadow-sm transition-shadow",
+        "border-muted/70 hover:shadow-md hover:border-primary/30 transition-all duration-150 animate-in fade-in slide-in-from-bottom-4 duration-600 delay-100",
         className
       )}
     >

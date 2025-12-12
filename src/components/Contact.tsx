@@ -54,7 +54,7 @@ export function Contact({ socialLinks = [], className }: ContactProps) {
   return (
     <div
       className={cn(
-        "flex flex-wrap items-center justify-center gap-2",
+        "flex flex-wrap items-center justify-center gap-2 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150",
         className
       )}
     >
