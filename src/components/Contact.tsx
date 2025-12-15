@@ -20,7 +20,7 @@ function Icon({ name, className }: { name: string; className?: string }) {
     <img
       src={`/icons/contacts/${name}.svg`}
       alt={name}
-      className={cn("h-8 w-8 md:h-10 md:w-10 text-foreground", className)}
+      className={cn("h-8 w-8 md:h-8 md:w-8 text-foreground", className)}
       aria-hidden="true"
     />
   );
@@ -63,7 +63,7 @@ export function Contact({ socialLinks = [], className }: ContactProps) {
           key={index}
           variant="ghost"
           size="icon"
-          className="h-12 w-12 md:h-14 md:w-14 text-foreground hover:text-foreground/80"
+          className="h-12 w-12 md:h-12 md:w-12 text-foreground hover:text-foreground/80"
           asChild
         >
           <a
