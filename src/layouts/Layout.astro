@@ -10,7 +10,7 @@ interface Props {
 
 const { 
   title, 
-  description = 'Personal homepage built with Astro and shadcn/ui',
+  description = 'Lam Ho (Hồ Phạm Lâm @hophamlam), one of a kind, part-time world savior. This is my own private domicile and I will not be harassed.',
   image = '/logo/hophamlam-logo.png'
 } = Astro.props;
 
@@ -37,7 +37,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <link rel="manifest" href="/site.webmanifest" />
     
     <meta name="generator" content={Astro.generator} />
-    <meta name="author" content="Ho Pham Lam" />
+    <meta name="author" content="Lam Ho (Hồ Phạm Lâm @hophamlam)" />
     <meta name="robots" content="index, follow" />
     
     <!-- Primary Meta Tags -->
@@ -71,6 +71,13 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Ho Pham Lam",
+      "alternateName": [
+        "Hồ Phạm Lâm",
+        "Ho Pham Lam",
+        "@hophamlam",
+        "hophamlam",
+        "Lam Ho"
+      ],
       "url": "https://hophamlam.com",
       "image": new URL(image, Astro.site).toString(),
       "sameAs": [
@@ -78,7 +85,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         "https://t.me/hophamlam"
       ],
       "jobTitle": "Full Stack Developer",
-      "description": description
+      "description": "Lam Ho (Hồ Phạm Lâm @hophamlam) one of a kind, part-time world savior. This is my own private domicile and I will not be harassed."
     })} />
   </head>
 <body class="min-h-screen bg-background antialiased relative flex flex-col">
