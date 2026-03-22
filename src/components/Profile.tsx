@@ -1,8 +1,11 @@
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
+import { FlipWords } from "./ui/flip-words";
 import { cn } from "@/lib/utils";
 
 export interface ProfileProps {
-  name: string;
+  name?: string;
+  flipWords?: string[];
+  flipDuration?: number;
   title?: string;
   description?: string;
   avatar?: string;
@@ -12,23 +15,28 @@ export interface ProfileProps {
 /**
  * Profile component - Minimal profile display
  * @param name - Tên của người dùng
+ * @param flipWords - Mảng các từ để flip animation (thay thế name)
+ * @param flipDuration - Thời gian mỗi từ hiển thị (ms)
  * @param title - Chức danh/nghề nghiệp (optional)
  * @param description - Mô tả với emoji (optional)
  * @param avatar - URL của avatar image
  */
 export function Profile({
   name,
+  flipWords,
+  flipDuration = 2000,
   title,
   description,
   avatar,
   className,
 }: ProfileProps) {
-  const initials = name
+  const displayName = name || "";
+  const initials = displayName
     .split(" ")
     .map((n) => n[0])
     .join("")
     .toUpperCase()
-    .slice(0, 2);
+    .slice(0, 2) || "HP";
 
   return (
     <div
@@ -38,14 +46,18 @@ export function Profile({
       )}
     >
       <Avatar className="h-32 w-32 md:h-48 md:w-48 ring-2 ring-border/50 hover:ring-primary/50 transition-all duration-300">
-        {avatar && <AvatarImage src={avatar} alt={name} />}
+        {avatar && <AvatarImage src={avatar} alt={displayName} />}
         <AvatarFallback className="text-3xl md:text-4xl">
           {initials}
         </AvatarFallback>
       </Avatar>
       <div className="space-y-2 leading-relaxed">
-        <h1 className="text-xl md:text-2xl font-bold leading-relaxed">
-          {name}
+        <h1 className="text-xl md:text-2xl font-bold leading-relaxed h-8 md:h-10 flex items-center justify-center">
+          {flipWords && flipWords.length > 0 ? (
+            <FlipWords words={flipWords} duration={flipDuration} />
+          ) : (
+            name
+          )}
         </h1>
         {title && (
           <p className="text-sm md:text-base text-muted-foreground leading-relaxed">

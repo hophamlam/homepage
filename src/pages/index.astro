@@ -7,7 +7,7 @@ import { Footer } from '../components/Footer';
 
 // Profile data
 const profileData = {
-  name: '',
+  flipWords: ['fulltime world savior', '334456677', `${new Date().getFullYear() + 1} will be my year`, '42m finisher'],
   description: '🍚🎵⚙️⚽|🧑‍🧑‍🧒‍🧒🐒🦀🇻🇳',
   avatar: '/logo/hophamlam-logo.png',
 };
@@ -61,7 +61,7 @@ const sideProjects = [
         <!-- Profile Section -->
         <Profile
           client:load
-          name={profileData.name}
+          flipWords={profileData.flipWords}
           description={profileData.description}
           avatar={profileData.avatar}
         />
